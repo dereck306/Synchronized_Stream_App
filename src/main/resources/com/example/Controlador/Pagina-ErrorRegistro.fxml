@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="170.0" prefWidth="210.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controlador.Controlador_ErrorRegistro">
+   <children>
+      <Label layoutX="16.0" layoutY="14.0" text="Informacion Invalida">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="89.0" layoutY="72.0" mnemonicParsing="false" onAction="#switchToSceneRegistro" text="OK" />
+   </children>
+</AnchorPane>

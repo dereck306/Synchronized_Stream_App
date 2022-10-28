@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controlador.Controlador_AgregarPelicula">
+   <children>
+      <Label layoutX="137.0" layoutY="26.0" text="Agregar Pelicula">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+      </Label>
+      <Pane layoutX="46.0" layoutY="99.0" prefHeight="206.0" prefWidth="506.0">
+         <children>
+            <Label layoutX="21.0" layoutY="30.0" text="Nombre">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="68.0" text="Genero">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNombre" layoutX="101.0" layoutY="29.0" prefHeight="26.0" prefWidth="379.0" promptText="Titulo" />
+            <TextField fx:id="txtGenero" layoutX="101.0" layoutY="67.0" prefHeight="26.0" prefWidth="379.0" promptText="Genero" />
+            <Label layoutX="27.0" layoutY="105.0" text="Fecha">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFecha" layoutX="104.0" layoutY="104.0" prefHeight="26.0" prefWidth="379.0" promptText="Fecha" />
+            <Label layoutY="139.0" text="Descripcion">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDescripcion" layoutX="104.0" layoutY="137.0" prefHeight="26.0" prefWidth="379.0" promptText="Descripcion" />
+            <Label fx:id="lblFile" layoutX="104.0" layoutY="175.0" prefHeight="17.0" prefWidth="379.0">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font></Label>
+            <Label layoutX="33.0" layoutY="174.0" text="Ruta">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="btnAgregar" layoutX="464.0" layoutY="315.0" mnemonicParsing="false" onAction="#agregar" text="Agregar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonBack" layoutX="46.0" layoutY="325.0" mnemonicParsing="false" onAction="#switchToScenePaginaPrincipal">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAgregar1" layoutX="299.0" layoutY="315.0" mnemonicParsing="false" onAction="#elegirPath" text="Seleccionar Video">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

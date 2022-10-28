@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightcyan;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controlador.Controlador_IniciarSesion">
+   <children>
+      <Pane layoutX="311.0" layoutY="9.0" prefHeight="377.0" prefWidth="275.0" style="-fx-background-color: lightblue; -fx-border-color: black;" styleClass="-">
+         <children>
+            <Label layoutX="52.0" layoutY="24.0" prefHeight="82.0" prefWidth="174.0" text="Iniciar Sesión" textOverrun="WORD_ELLIPSIS" underline="true" wrapText="true">
+               <font>
+                  <Font name="SignPainter-HouseScript" size="39.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="118.0" prefHeight="34.0" prefWidth="129.0" text="Nombre de Usuario:" textOverrun="WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="SignPainter-HouseScript" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="193.0" prefHeight="34.0" prefWidth="92.0" text="Contraseña:" textOverrun="WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="SignPainter-HouseScript" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="75.0" layoutY="287.0" mnemonicParsing="false" onAction="#ingresar" prefHeight="13.0" prefWidth="120.0" style="-fx-background-color: azure; -fx-background-radius: 30;" text="Iniciar Sesión">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtnombreUsuario" layoutX="55.0" layoutY="164.0" />
+            <TextField fx:id="txtcontraUsuario" layoutX="55.0" layoutY="238.0" />
+         </children>
+      </Pane>
+      <Label layoutX="111.0" layoutY="324.0" prefHeight="22.0" prefWidth="90.0" text="¿No tienes cuenta?" textOverrun="WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="SignPainter-HouseScript" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="96.0" layoutY="357.0" mnemonicParsing="false" onAction="#switchToSceneRegistro" prefHeight="13.0" prefWidth="120.0" style="-fx-background-color: azure; -fx-background-radius: 30; -fx-border-color: black;" text="Registrarse">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imagPropaganda" fitHeight="292.0" fitWidth="267.0" layoutX="20.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</Pane>
